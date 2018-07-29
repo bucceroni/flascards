@@ -1,16 +1,18 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
-
-import BtnDecks from "./BtnDecks";
 import { blue } from "../utils/colors";
 
-class Home extends React.Component {
+export default class About extends React.Component {
   render() {
     return (
       <View style={styles.start}>
-        <Text style={styles.title}>Select one deck and have fun !!!</Text>
+        <Text style={styles.title}>Project overview</Text>
         <View style={styles.center}>
-          <BtnDecks />
+          <Text style={styles.text}>
+            Allows users to study a collection of flashcards. With the app, the
+            different categories of flashcards called "decks", add flashcards to
+            these decks, and make the quizes in these decks.
+          </Text>
         </View>
       </View>
     );
@@ -28,7 +30,12 @@ const styles = StyleSheet.create({
     color: blue,
     fontSize: 16,
     margin: 20
+  },
+  text: {
+    textAlign: "center",
+    color: blue,
+    fontSize: 14,
+    margin: 20
+   
   }
 });
-
-export default Home

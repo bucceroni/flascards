@@ -622,7 +622,7 @@ export default class App extends React.Component {
 *  Com o Stack Navigator, novas telas são adicionadas e removidas como uma pilha. Isso coloca telas em cima umas da outras, de maneira que "a última que entra é a primeira que sai", semelhante aos métodos push() e pop() de Array. O uso de StackNavigator é muito semelhante ao de TabNavigator. Mas, em vez de passar em um objeto de abas diferentes, podemos passar um objeto de telas diferentes, que devem estar disponíveis em toda essa pilha. Primeiro, vá em frente e faça a importação do StackNavigator a partir de react-navigation
 ```
 // App.js
-Import { StackNavigator } from 'react-navigation';
+import { StackNavigator } from 'react-navigation';
 
 const Home = ({ navigation }) => (
   <View>

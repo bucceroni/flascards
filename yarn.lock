@@ -134,9 +134,9 @@
   version "7.0.0-beta.54"
   resolved "https://registry.yarnpkg.com/@babel/helper-plugin-utils/-/helper-plugin-utils-7.0.0-beta.54.tgz#61d2a9a0f9a3e31838a458debb9eebd7bdd249b4"
 
-"@babel/helper-remap-async-to-generator@^7.0.0-beta":
+"@babel/helper-remap--to-generator@^7.0.0-beta":
   version "7.0.0-beta.54"
-  resolved "https://registry.yarnpkg.com/@babel/helper-remap-async-to-generator/-/helper-remap-async-to-generator-7.0.0-beta.54.tgz#39a50052aadd74d40c73b7c58eb963b90fac56d3"
+  resolved "https://registry.yarnpkg.com/@babel/helper-remap--to-generator/-/helper-remap--to-generator-7.0.0-beta.54.tgz#39a50052aadd74d40c73b7c58eb963b90fac56d3"
   dependencies:
     "@babel/helper-annotate-as-pure" "7.0.0-beta.54"
     "@babel/helper-wrap-function" "7.0.0-beta.54"
@@ -513,7 +513,7 @@
   resolved "https://registry.yarnpkg.com/@expo/ngrok/-/ngrok-2.4.2.tgz#cb304ca49913b8bc23550407fb4f8b25f3e76a9a"
   dependencies:
     "@expo/ngrok-bin" "2.2.8-beta.3"
-    async "^0.9.0"
+     "^0.9.0"
     lock "^0.1.2"
     logfmt "^1.2.0"
     request "^2.81.0"
@@ -523,9 +523,9 @@
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/@expo/osascript/-/osascript-1.8.1.tgz#d145f6c1b4ac9663c0bf5f3054236dc87dc4deba"
   dependencies:
-    "@expo/spawn-async" "^1.2.8"
+    "@expo/spawn-" "^1.2.8"
     babel-runtime "^6.23.0"
-    exec-async "^2.2.0"
+    exec- "^2.2.0"
 
 "@expo/schemer@1.1.0":
   version "1.1.0"
@@ -541,9 +541,9 @@
     probe-image-size "^3.1.0"
     read-chunk "^2.0.0"
 
-"@expo/spawn-async@^1.2.8":
+"@expo/spawn-@^1.2.8":
   version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@expo/spawn-async/-/spawn-async-1.3.0.tgz#01b8a4f6bba10b792663f9272df66c7e90166dad"
+  resolved "https://registry.yarnpkg.com/@expo/spawn-/-/spawn--1.3.0.tgz#01b8a4f6bba10b792663f9272df66c7e90166dad"
   dependencies:
     cross-spawn "^5.1.0"
 
@@ -860,21 +860,21 @@ astral-regex@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/astral-regex/-/astral-regex-1.0.0.tgz#6c8c3fb827dd43ee3918f27b82782ab7658a6fd9"
 
-async-limiter@~1.0.0:
+-limiter@~1.0.0:
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/async-limiter/-/async-limiter-1.0.0.tgz#78faed8c3d074ab81f22b4e985d79e8738f720f8"
+  resolved "https://registry.yarnpkg.com/-limiter/-/-limiter-1.0.0.tgz#78faed8c3d074ab81f22b4e985d79e8738f720f8"
 
-async@^0.9.0:
+@^0.9.0:
   version "0.9.2"
-  resolved "https://registry.yarnpkg.com/async/-/async-0.9.2.tgz#aea74d5e61c1f899613bf64bda66d4c78f2fd17d"
+  resolved "https://registry.yarnpkg.com//-/-0.9.2.tgz#aea74d5e61c1f899613bf64bda66d4c78f2fd17d"
 
-async@^1.4.0, async@~1.5:
+@^1.4.0, @~1.5:
   version "1.5.2"
-  resolved "https://registry.yarnpkg.com/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
+  resolved "https://registry.yarnpkg.com//-/-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
 
-async@^2.1.4, async@^2.4.0:
+@^2.1.4, @^2.4.0:
   version "2.6.1"
-  resolved "https://registry.yarnpkg.com/async/-/async-2.6.1.tgz#b245a23ca71930044ec53fa46aa00a3e87c6a610"
+  resolved "https://registry.yarnpkg.com//-/-2.6.1.tgz#b245a23ca71930044ec53fa46aa00a3e87c6a610"
   dependencies:
     lodash "^4.17.10"
 
@@ -1049,9 +1049,9 @@ babel-helper-regex@^6.24.1:
     babel-types "^6.26.0"
     lodash "^4.17.4"
 
-babel-helper-remap-async-to-generator@^6.16.0:
+babel-helper-remap--to-generator@^6.16.0:
   version "6.24.1"
-  resolved "https://registry.yarnpkg.com/babel-helper-remap-async-to-generator/-/babel-helper-remap-async-to-generator-6.24.1.tgz#5ec581827ad723fecdd381f1c928390676e4551b"
+  resolved "https://registry.yarnpkg.com/babel-helper-remap--to-generator/-/babel-helper-remap--to-generator-6.24.1.tgz#5ec581827ad723fecdd381f1c928390676e4551b"
   dependencies:
     babel-helper-function-name "^6.24.1"
     babel-runtime "^6.22.0"
@@ -1135,9 +1135,9 @@ babel-plugin-react-transform@^3.0.0:
   dependencies:
     lodash "^4.6.1"
 
-babel-plugin-syntax-async-functions@^6.5.0, babel-plugin-syntax-async-functions@^6.8.0:
+babel-plugin-syntax--functions@^6.5.0, babel-plugin-syntax--functions@^6.8.0:
   version "6.13.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-syntax-async-functions/-/babel-plugin-syntax-async-functions-6.13.0.tgz#cad9cad1191b5ad634bf30ae0872391e0647be95"
+  resolved "https://registry.yarnpkg.com/babel-plugin-syntax--functions/-/babel-plugin-syntax--functions-6.13.0.tgz#cad9cad1191b5ad634bf30ae0872391e0647be95"
 
 babel-plugin-syntax-class-properties@^6.5.0, babel-plugin-syntax-class-properties@^6.8.0:
   version "6.13.0"
@@ -1175,12 +1175,12 @@ babel-plugin-syntax-trailing-function-commas@^6.20.0, babel-plugin-syntax-traili
   version "6.22.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-trailing-function-commas/-/babel-plugin-syntax-trailing-function-commas-6.22.0.tgz#ba0360937f8d06e40180a43fe0d5616fff532cf3"
 
-babel-plugin-transform-async-to-generator@6.16.0:
+babel-plugin-transform--to-generator@6.16.0:
   version "6.16.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-transform-async-to-generator/-/babel-plugin-transform-async-to-generator-6.16.0.tgz#19ec36cb1486b59f9f468adfa42ce13908ca2999"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform--to-generator/-/babel-plugin-transform--to-generator-6.16.0.tgz#19ec36cb1486b59f9f468adfa42ce13908ca2999"
   dependencies:
-    babel-helper-remap-async-to-generator "^6.16.0"
-    babel-plugin-syntax-async-functions "^6.8.0"
+    babel-helper-remap--to-generator "^6.16.0"
+    babel-plugin-syntax--functions "^6.8.0"
     babel-runtime "^6.0.0"
 
 babel-plugin-transform-class-properties@^6.18.0, babel-plugin-transform-class-properties@^6.5.0, babel-plugin-transform-class-properties@^6.8.0:
@@ -1496,7 +1496,7 @@ babel-preset-react-native@1.9.0:
   dependencies:
     babel-plugin-check-es2015-constants "^6.5.0"
     babel-plugin-react-transform "2.0.2"
-    babel-plugin-syntax-async-functions "^6.5.0"
+    babel-plugin-syntax--functions "^6.5.0"
     babel-plugin-syntax-class-properties "^6.5.0"
     babel-plugin-syntax-flow "^6.5.0"
     babel-plugin-syntax-jsx "^6.5.0"
@@ -1530,7 +1530,7 @@ babel-preset-react-native@^4.0.0:
   dependencies:
     babel-plugin-check-es2015-constants "^6.5.0"
     babel-plugin-react-transform "^3.0.0"
-    babel-plugin-syntax-async-functions "^6.5.0"
+    babel-plugin-syntax--functions "^6.5.0"
     babel-plugin-syntax-class-properties "^6.5.0"
     babel-plugin-syntax-dynamic-import "^6.18.0"
     babel-plugin-syntax-flow "^6.5.0"
@@ -2304,9 +2304,9 @@ degenerator@^1.0.4:
     escodegen "1.x.x"
     esprima "3.x.x"
 
-delay-async@^1.0.0:
+delay-@^1.0.0:
   version "1.1.0"
-  resolved "https://registry.yarnpkg.com/delay-async/-/delay-async-1.1.0.tgz#b8fa8fecb88621350705285c8f3cf177dfde666d"
+  resolved "https://registry.yarnpkg.com/delay-/-/delay--1.1.0.tgz#b8fa8fecb88621350705285c8f3cf177dfde666d"
 
 delayed-stream@~1.0.0:
   version "1.0.0"
@@ -2508,9 +2508,9 @@ eventemitter3@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-3.1.0.tgz#090b4d6cdbd645ed10bf750d4b5407942d7ba163"
 
-exec-async@^2.2.0:
+exec-@^2.2.0:
   version "2.2.0"
-  resolved "https://registry.yarnpkg.com/exec-async/-/exec-async-2.2.0.tgz#c7c5ad2eef3478d38390c6dd3acfe8af0efc8301"
+  resolved "https://registry.yarnpkg.com/exec-/-/exec--2.2.0.tgz#c7c5ad2eef3478d38390c6dd3acfe8af0efc8301"
 
 exec-sh@^0.2.0:
   version "0.2.2"
@@ -2542,9 +2542,9 @@ execa@^0.8.0:
     signal-exit "^3.0.0"
     strip-eof "^1.0.0"
 
-exists-async@^2.0.0:
+exists-@^2.0.0:
   version "2.0.0"
-  resolved "https://registry.yarnpkg.com/exists-async/-/exists-async-2.0.0.tgz#7e0b1652b34b0fe18b9f9640987bd56d59e51e5e"
+  resolved "https://registry.yarnpkg.com/exists-/-/exists--2.0.0.tgz#7e0b1652b34b0fe18b9f9640987bd56d59e51e5e"
 
 exit@^0.1.2:
   version "0.1.2"
@@ -2908,9 +2908,9 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-freeport-async@^1.1.1:
+freeport-@^1.1.1:
   version "1.1.1"
-  resolved "https://registry.yarnpkg.com/freeport-async/-/freeport-async-1.1.1.tgz#5c8cf4fc1aba812578317bd4d7a1e5597baf958e"
+  resolved "https://registry.yarnpkg.com/freeport-/-/freeport--1.1.1.tgz#5c8cf4fc1aba812578317bd4d7a1e5597baf958e"
 
 fresh@0.5.2:
   version "0.5.2"
@@ -3125,7 +3125,7 @@ handlebars@^4.0.3:
   version "4.0.11"
   resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.0.11.tgz#630a35dfe0294bc281edae6ffc5d329fc7982dcc"
   dependencies:
-    async "^1.4.0"
+     "^1.4.0"
     optimist "^0.6.1"
     source-map "^0.4.4"
   optionalDependencies:
@@ -3201,7 +3201,7 @@ hasbin@^1.2.3:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/hasbin/-/hasbin-1.2.3.tgz#78c5926893c80215c2b568ae1fd3fcab7a2696b0"
   dependencies:
-    async "~1.5"
+     "~1.5"
 
 hoek@2.x.x:
   version "2.16.3"
@@ -3360,7 +3360,7 @@ inquirer@^3.0.1, inquirer@^3.0.6:
     figures "^2.0.0"
     lodash "^4.3.0"
     mute-stream "0.0.7"
-    run-async "^2.2.0"
+    run- "^2.2.0"
     rx-lite "^4.0.8"
     rx-lite-aggregates "^4.0.8"
     string-width "^2.1.0"
@@ -3379,7 +3379,7 @@ inquirer@^5.0.1:
     figures "^2.0.0"
     lodash "^4.3.0"
     mute-stream "0.0.7"
-    run-async "^2.2.0"
+    run- "^2.2.0"
     rxjs "^5.5.2"
     string-width "^2.1.0"
     strip-ansi "^4.0.0"
@@ -3660,7 +3660,7 @@ istanbul-api@^1.1.14:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/istanbul-api/-/istanbul-api-1.3.1.tgz#4c3b05d18c0016d1022e079b98dc82c40f488954"
   dependencies:
-    async "^2.1.4"
+     "^2.1.4"
     compare-versions "^3.1.0"
     fileset "^2.0.2"
     istanbul-lib-coverage "^1.2.0"
@@ -4531,7 +4531,7 @@ metro@^0.30.0:
   dependencies:
     "@babel/core" "^7.0.0-beta"
     "@babel/generator" "^7.0.0-beta"
-    "@babel/helper-remap-async-to-generator" "^7.0.0-beta"
+    "@babel/helper-remap--to-generator" "^7.0.0-beta"
     "@babel/plugin-external-helpers" "^7.0.0-beta"
     "@babel/plugin-proposal-class-properties" "^7.0.0-beta"
     "@babel/plugin-proposal-object-rest-spread" "^7.0.0-beta"
@@ -4561,7 +4561,7 @@ metro@^0.30.0:
     "@babel/traverse" "^7.0.0-beta"
     "@babel/types" "^7.0.0-beta"
     absolute-path "^0.0.0"
-    async "^2.4.0"
+     "^2.4.0"
     babel-core "^6.24.1"
     babel-generator "^6.26.0"
     babel-plugin-external-helpers "^6.22.0"
@@ -5657,7 +5657,7 @@ react-native@~0.55.2:
     art "^0.10.0"
     babel-core "^6.24.1"
     babel-plugin-syntax-trailing-function-commas "^6.20.0"
-    babel-plugin-transform-async-to-generator "6.16.0"
+    babel-plugin-transform--to-generator "6.16.0"
     babel-plugin-transform-class-properties "^6.18.0"
     babel-plugin-transform-exponentiation-operator "^6.5.0"
     babel-plugin-transform-flow-strip-types "^6.21.0"
@@ -6120,9 +6120,9 @@ rsvp@^3.3.3:
   version "3.6.2"
   resolved "https://registry.yarnpkg.com/rsvp/-/rsvp-3.6.2.tgz#2e96491599a96cde1b515d5674a8f7a91452926a"
 
-run-async@^2.2.0:
+run-@^2.2.0:
   version "2.3.0"
-  resolved "https://registry.yarnpkg.com/run-async/-/run-async-2.3.0.tgz#0371ab4ae0bdd720d4166d7dfda64ff7a445a6c0"
+  resolved "https://registry.yarnpkg.com/run-/-/run--2.3.0.tgz#0371ab4ae0bdd720d4166d7dfda64ff7a445a6c0"
   dependencies:
     is-promise "^2.1.0"
 
@@ -7136,7 +7136,7 @@ ws@^4.0.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/ws/-/ws-4.1.0.tgz#a979b5d7d4da68bf54efe0408967c324869a7289"
   dependencies:
-    async-limiter "~1.0.0"
+    -limiter "~1.0.0"
     safe-buffer "~5.1.0"
 
 xcode@^0.9.1:
@@ -7156,7 +7156,7 @@ xdl@48.1.4:
     "@expo/ngrok" "2.4.2"
     "@expo/osascript" "^1.8.0"
     "@expo/schemer" "1.1.0"
-    "@expo/spawn-async" "^1.2.8"
+    "@expo/spawn-" "^1.2.8"
     analytics-node "^2.1.0"
     auth0 "2.9.1"
     auth0-js "9.3.3"
@@ -7165,14 +7165,14 @@ xdl@48.1.4:
     chalk "^2.3.0"
     concat-stream "^1.6.0"
     decache "^4.1.0"
-    delay-async "^1.0.0"
+    delay- "^1.0.0"
     es6-error "^4.0.2"
-    exists-async "^2.0.0"
+    exists- "^2.0.0"
     express "^4.13.4"
     file-type "^4.0.0"
     follow-redirects "^1.2.3"
     form-data "^2.1.4"
-    freeport-async "^1.1.1"
+    freeport- "^1.1.1"
     fs-extra "^4.0.2"
     getenv "^0.7.0"
     glob "^7.0.3"

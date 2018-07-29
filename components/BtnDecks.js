@@ -3,19 +3,15 @@ import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 
 import { blue, white } from "../utils/colors";
 
-
-
-export default class BtnDecks extends React.Component {
-  render() {
-    return (
-      <View>
-        <TouchableOpacity style={styles.button} onPress={this.testes}>
-          <Text style={styles.buttonTitle}>teste</Text>
-          <Text style={styles.buttonText}>3 cards</Text>
-        </TouchableOpacity>
-      </View>
-    );
-  }
+export default function BtnDecks({ title, questions, onPress }) {
+  return (
+    <View>
+      <TouchableOpacity style={styles.button} onPress={onPress}>
+        <Text style={styles.buttonTitle}>{title}</Text>
+        <Text style={styles.buttonText}>{questions.length} cards</Text>
+      </TouchableOpacity>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({

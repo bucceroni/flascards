@@ -1,12 +1,13 @@
 import React from "react";
 import { Text, View, TextInput, StyleSheet } from "react-native";
 
+import { connect } from "react-redux";
+import { addDeck } from "../actions/index";
+
 import BtnCreateDeck from "./BtnCreateDeck";
 import { blue } from "../utils/colors";
 
-import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
-import * as actions from "../actions/index";
+import { submitDeck } from "../utils/api";
 
 class AddDecks extends React.Component {
   constructor(props) {
@@ -27,9 +28,18 @@ class AddDecks extends React.Component {
 
   createDeck = () => {
     const { title } = this.state;
-    const { actions } = this.props;
+    const key = title;
+    const newDeck = { title: key, questions: [] };
 
-    actions.saveDeckTitle(title);
+    this.props.dispatch(
+      addDeck({
+        [key]: newDeck
+      })
+    );
+
+    submitDeck(key, newDeck);
+
+    this.setState({ title: "" });
   };
 
   render() {
@@ -67,24 +77,4 @@ const styles = StyleSheet.create({
   }
 });
 
-function mapStateToProps(decks) {
-  return {
-    decks
-  };
-}
-
-const mapDispatchToProps = dispatch => {
-  return {
-    actions: bindActionCreators(
-      {
-        ...actions
-      },
-      dispatch
-    )
-  };
-};
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(AddDecks);
+export default connect()(AddDecks);

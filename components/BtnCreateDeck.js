@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { Text, TouchableOpacity, StyleSheet } from "react-native";
 import { blue, white, gray } from "../utils/colors";
 
 export default function BtnCreateDeck({ onPress, disabled }) {

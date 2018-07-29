@@ -1,9 +1,10 @@
 import React from "react";
 import { View, StatusBar } from "react-native";
 import { createBottomTabNavigator } from "react-navigation";
+import {createStore} from "redux"
+import {Provider} from "react-redux"
+import reducer from "./reducers"
 
-import { Provider } from "react-redux";
-import configureStore from './store/configureStore'
 
 import { Constants } from "expo";
 
@@ -64,12 +65,10 @@ const Tabs = createBottomTabNavigator(
   }
 );
 
-const store = configureStore()
-
 export default class App extends React.Component {
   render() {
     return (
-      <Provider store={store}>
+      <Provider store={createStore(reducer)}>
         <View style={{ flex: 1 }}>
           <FlashcardsStatusBar
             backgroundColor={blue}
@@ -77,7 +76,7 @@ export default class App extends React.Component {
           />
           <Tabs/>
         </View>
-      </Provider>
+        </Provider>
     );
   }
 }

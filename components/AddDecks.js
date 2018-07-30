@@ -2,12 +2,12 @@ import React from "react";
 import { Text, View, TextInput, StyleSheet } from "react-native";
 
 import { connect } from "react-redux";
-import { addDeck } from "../actions/index";
 
 import BtnCreateDeck from "./BtnCreateDeck";
 import { blue } from "../utils/colors";
 
-import { submitDeck } from "../utils/api";
+import { addDeck, getDecks } from "../utils/api";
+import { receiveDecks } from "../actions";
 
 class AddDecks extends React.Component {
   constructor(props) {
@@ -27,18 +27,19 @@ class AddDecks extends React.Component {
   };
 
   createDeck = () => {
-    const { title } = this.state;
-    const key = title;
-    const newDeck = { title: key, questions: [] };
+    const { dispatch } = this.props;
 
-    this.props.dispatch(
-      addDeck({
-        [key]: newDeck
-      })
-    );
+    const deck = {
+      title: this.state.title,
+      questions: []
+    };
 
-    submitDeck(key, newDeck);
-
+    addDeck(deck).then(() => {
+      getDecks().then(decksUpdated => {
+        dispatch(receiveDecks(decksUpdated));
+        this.props.navigation.navigate("Home");
+      });
+    });
     this.setState({ title: "" });
   };
 

@@ -1,20 +1,25 @@
 import React from "react";
 import { View, StatusBar } from "react-native";
-import { createBottomTabNavigator } from "react-navigation";
-import {createStore} from "redux"
-import {Provider} from "react-redux"
-import reducer from "./reducers"
-
-
 import { Constants } from "expo";
-
-import { gray, blue } from "./utils/colors";
+import { gray, blue, white } from "./utils/colors";
 import { Ionicons } from "@expo/vector-icons";
+
+import {
+  createBottomTabNavigator,
+  createStackNavigator
+} from "react-navigation";
+
+import { createStore } from "redux";
+import { Provider } from "react-redux";
+import reducer from "./reducers";
 
 import Home from "./components/Home";
 import AddDecks from "./components/AddDecks";
 import About from "./components/About";
 
+import Deck from "./components/Deck";
+import AddCard from "./components/AddCard";
+import Quiz from "./components/Quiz";
 
 function FlashcardsStatusBar({ backgroundColor, ...props }) {
   return (
@@ -65,6 +70,41 @@ const Tabs = createBottomTabNavigator(
   }
 );
 
+const Stack = createStackNavigator({
+  Home: {
+    screen: Tabs,
+    navigationOptions: {
+      header: null
+    }
+  },
+  AddDecks: {
+    screen: AddDecks
+  },
+  Deck: {
+    screen: Deck,
+    navigationOptions: {
+      headerTintColor: white,
+      headerStyle: {
+        backgroundColor: blue
+      }
+    }
+  },
+  AddCard: {
+    screen: AddCard,
+    navigationOptions: {
+      title: "Add Card",
+      headerTintColor: white,
+      headerStyle: {
+        backgroundColor: blue
+      }
+    }
+  },
+  Quiz: {
+    screen: Quiz,
+    navigationOptions: {}
+  }
+});
+
 export default class App extends React.Component {
   render() {
     return (
@@ -74,9 +114,9 @@ export default class App extends React.Component {
             backgroundColor={blue}
             barStyle="light-content"
           />
-          <Tabs/>
+          <Stack />
         </View>
-        </Provider>
+      </Provider>
     );
   }
 }

@@ -7,7 +7,7 @@ export function receiveDecks(decks){
     }
 }
 
-export function addDeck(deck){
+export function incrementDeck(deck){
     return {
         type: types.ADD_DECK,
         deck

@@ -1,4 +1,4 @@
-export const FLASHCARDS_STORAGE_KEY = 'FlashCards:decks'
+export const FLASHCARDS_STORAGE_KEY = 'FlashCards:flashcards'
 
 export function formatDecks (results) {
     if (results === null) {

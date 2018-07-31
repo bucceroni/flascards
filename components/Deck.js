@@ -59,9 +59,7 @@ class Deck extends Component {
       );
     }
     return (
-      <View>
-        <Text>Wait</Text>
-      </View>
+      <View/>
     );
   }
 }

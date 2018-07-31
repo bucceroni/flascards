@@ -31,7 +31,7 @@ Aplicativo para dispositivos móveis (Android ou iOS - ou ambos) que permite que
 <hr >
 
 ## Iniciar Projeto
-Existe diversas formas para iniciar este projeto, descrevi quatro maneiras utilizando `Expo` e `Genymotion`.
+Existe diversas formas para iniciar este projeto, descrevi duas maneiras utilizando `Expo` e `Genymotion`.
 - O Expo é um serviço que torna quase tudo que envolve o React Native bem mais fácil. A ideia é não haver nenhuma necessidade de usar Android Studio ou Xcode. Permite inclusive desenvolver para iOS com Windows ou Linux.
   - `Expo no Google Play (Android)`
   - `Expo na App Store (iOS)`
@@ -57,19 +57,7 @@ Outras formas acesse:
   - Ler QR Code (sugestão de app `QR code`)
   - Abrir com URL no app `Expo`
 
-## 2. Expo Web
-- Acesse `https://expo.io/learn`
-- Clique `Try Expo in the browser (Open Snack)`
-- Clique `... import git repository`
-- Cole em Git Repository `https://github.com/bucceroni/flashcards.git`
-- Clique `Import`
-- Selecione Android ou iOS `Tap to play`
-
-## 3. Expo Web (URL) 
-- Aplicação disponível (código + simulador):
-  `https://snack.expo.io/@git/github.com/bucceroni/flashcards`
-
-## 4. Genymotion (simulador android)
+## 2. Genymotion (simulador android)
 - Siga passo a passo o [link](https://medium.com/@devmrin/complete-how-to-create-react-native-app-with-genymotion-android-emulator-on-windows-10-in-10-3834fd90b074)
 - Observação: verifique se esta selecionada a opção: `Settings` > `ADB` > `Use Genymotion Android tools (default)`
 - Inicio projeto com `yarn run android` ou `npm run android`

@@ -28,16 +28,19 @@ class AddDecks extends React.Component {
 
   createDeck = () => {
     const { dispatch } = this.props;
+    const { title } = this.state;
 
     const deck = {
-      title: this.state.title,
+      title: title,
       questions: []
     };
+
+    let key = title 
 
     addDeck(deck).then(() => {
       getDecks().then(decksUpdated => {
         dispatch(receiveDecks(decksUpdated));
-        this.props.navigation.navigate("Home");
+        this.props.navigation.navigate("Deck", {key});
       });
     });
     this.setState({ title: "" });

@@ -101,7 +101,13 @@ const Stack = createStackNavigator({
   },
   Quiz: {
     screen: Quiz,
-    navigationOptions: {}
+    navigationOptions: {
+      title: "Quiz",
+      headerTintColor: white,
+      headerStyle: {
+        backgroundColor: blue
+      }
+    }
   }
 });
 
